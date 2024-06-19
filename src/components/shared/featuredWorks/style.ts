@@ -1,29 +1,7 @@
 import styled from "styled-components";
 
 export const FeaturedWorksContainer = styled.div`
-  padding-top: 7%;
   padding-bottom: 7%;
-  .topBar {
-    display: flex;
-    gap: 10px;
-    p {
-      font-size: 20px;
-      font-weight: 600;
-      font-family: Outfit;
-    }
-    #myWord {
-      color: #ffffff;
-      display: flex;
-      flex-direction: column;
-      gap: 5px;
-      div {
-        border: solid 1px #f9bf37;
-      }
-    }
-    #serviceWord {
-      color: #f9bf37;
-    }
-  }
   .grid {
     #grid {
       @media (max-width: 450px) {

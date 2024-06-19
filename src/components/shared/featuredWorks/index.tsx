@@ -8,12 +8,6 @@ interface IFeaturedWorks {
 const FeaturedWorks = ({ data }: IFeaturedWorks) => {
   return (
     <FeaturedWorksContainer>
-      <div className="topBar">
-        <p id="myWord">
-          FEATURED <div></div>
-        </p>
-        <p id="serviceWord">WORKS</p>
-      </div>
       <Grid container className="grid">
         {data.map((item: any) => (
           <Grid item width={"50%"} id="grid">
