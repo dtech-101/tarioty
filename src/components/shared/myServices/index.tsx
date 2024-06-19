@@ -11,12 +11,6 @@ interface IMyServiceTabs {
 const MyServiceTabs = ({ services }: IMyServiceTabs) => {
   return (
     <MyServiceTabsContainer>
-      <div className="topBar">
-        <p id="myWord">
-          MY <div></div>{" "}
-        </p>
-        <p id="serviceWord">SERVICES</p>
-      </div>
       <MyServiceTabsContent>
         {services?.map((item) => (
           <div className="mainBox">

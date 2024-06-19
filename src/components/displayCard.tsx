@@ -3,7 +3,7 @@ import { Box, Container } from "@mui/material";
 interface IDisplayCard {
   children: React.ReactNode;
   backgroundColor?: string | null;
-  backgroundImg?: any,
+  backgroundImg?: any;
   position?: "absolute" | "relative" | "static";
   border?: string;
   padding?: string;
@@ -22,15 +22,15 @@ export const DisplayCard = ({
   paddingTop,
   paddingLeft,
   paddingBottom,
-  marginBottom
+  marginBottom,
 }: IDisplayCard) => {
   return (
     <Box
       sx={{
-        width: '100%',
+        width: "100%",
         backgroundColor: backgroundColor,
         backgroundImage: `url(${backgroundImg})`,
-        backgroundSize: 'cover',
+        backgroundSize: "cover",
         position: position,
         border: border,
         p: padding,
@@ -38,7 +38,7 @@ export const DisplayCard = ({
         pl: paddingLeft,
         pb: paddingBottom,
         mb: marginBottom,
-        overflowX: 'hidden',
+        overflowX: "hidden",
       }}
     >
       <Container maxWidth="xl">{children}</Container>
