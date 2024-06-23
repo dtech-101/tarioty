@@ -14,7 +14,7 @@ const FeaturedWorks = ({ data }: IFeaturedWorks) => {
             <FeaturedWorksBox>
               <div className="blurBox">
                 <div id="blur"></div>
-                <img src={item.img} id="img" />
+                <img src={item.img} id="img" alt="item" />
               </div>
               <div className="details">
                 <p id="name">{item.name}</p>
