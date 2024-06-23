@@ -1,9 +1,5 @@
 export const routes = [
   {
-    page: "HOME",
-    link: "*",
-  },
-  {
     page: "ABOUT",
     link: "/about",
   },

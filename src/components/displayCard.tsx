@@ -4,13 +4,14 @@ interface IDisplayCard {
   children: React.ReactNode;
   backgroundColor?: string | null;
   backgroundImg?: any;
-  position?: "absolute" | "relative" | "static";
+  position?: "absolute" | "relative" | "static" | "fixed";
   border?: string;
   padding?: string;
   paddingTop?: string;
   paddingLeft?: string;
   paddingBottom?: string;
   marginBottom?: string;
+  bottom?: string;
 }
 export const DisplayCard = ({
   children,
@@ -23,6 +24,7 @@ export const DisplayCard = ({
   paddingLeft,
   paddingBottom,
   marginBottom,
+  bottom,
 }: IDisplayCard) => {
   return (
     <Box
@@ -39,6 +41,7 @@ export const DisplayCard = ({
         pb: paddingBottom,
         mb: marginBottom,
         overflowX: "hidden",
+        bottom: bottom,
       }}
     >
       <Container maxWidth="xl">{children}</Container>

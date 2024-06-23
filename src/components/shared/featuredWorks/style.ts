@@ -25,6 +25,7 @@ export const FeaturedWorksBox = styled.div`
     position: relative;
     overflow: hidden;
     cursor: pointer;
+    width: 95%;
     #blur {
       position: absolute;
       z-index: 2;
@@ -32,6 +33,7 @@ export const FeaturedWorksBox = styled.div`
       transition: 1s;
       background: white;
       opacity: 0.3;
+      transform-origin: top right;
       width: clamp(200px, 45vw, 644px);
       aspect-ratio: 10/8;
       @media (max-width: 450px) {
@@ -40,11 +42,12 @@ export const FeaturedWorksBox = styled.div`
     }
     &:hover {
       #blur {
-        width: 150px;
-        aspect-ratio: 10/8;
+        transform: scale(0.3);
+        right: 0%;
       }
       #img {
         transform: scale(1.2);
+        filter: blur(0px);
       }
     }
   }
@@ -54,6 +57,7 @@ export const FeaturedWorksBox = styled.div`
     aspect-ratio: 10/8;
     border-radius: 5px;
     transition: 0.5s;
+    filter: blur(3px);
     @media (max-width: 450px) {
       width: 100%;
     }
