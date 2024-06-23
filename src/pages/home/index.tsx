@@ -76,7 +76,7 @@ const Home = () => {
         <Heading letters={letters} nonAnimatedText="DIGITAL" />
         <HBContainer>
           <HeroImgContainer>
-            <img src={Hero} />
+            <img src={Hero} alt="hero" />
           </HeroImgContainer>
           <BesideHeroImg>
             <p id="word1">Hello Hello ✌️</p>
