@@ -1,7 +1,6 @@
 import styled from "@emotion/styled";
 
 export const HeadingContainer = styled.div`
-  height: 160px;
   overflow: hidden;
   display: flex;
   margin: auto;
@@ -9,6 +8,7 @@ export const HeadingContainer = styled.div`
   gap: clamp(10px, 5vw, 70px);
   .box {
     display: flex;
+    height: 170px;
     @media (max-width: 899px) {
       justify-content: center;
     }
@@ -68,7 +68,7 @@ export const AnimatedBox = styled.div`
       bottom: 100%;
     }
     #shadowText {
-      bottom: 120%;
+      bottom: 108%;
     }
   }
   @media (max-width: 899px) {

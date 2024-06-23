@@ -8,11 +8,22 @@ import {
 interface IHeading {
   letters: string[];
   nonAnimatedText: string;
+  flexDirection?: "column" | "column-reverse";
+  gap?: string;
+  alignItems?: "center";
 }
 
-const Heading = ({ letters, nonAnimatedText }: IHeading) => {
+const Heading = ({
+  letters,
+  nonAnimatedText,
+  flexDirection,
+  gap,
+  alignItems,
+}: IHeading) => {
   return (
-    <HeadingContainer>
+    <HeadingContainer
+      style={{ flexDirection: flexDirection, gap: gap, alignItems: alignItems }}
+    >
       <HeadingText>{nonAnimatedText}</HeadingText>
       <div className="box">
         {letters.map((item) => (

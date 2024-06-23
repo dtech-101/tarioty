@@ -6,11 +6,11 @@ interface ILayout {
 }
 const Layout = ({ children }: ILayout) => {
   return (
-    <div>
+    <>
       <Navbar />
-     <div> {children}</div>
+      <div> {children}</div>
       <Footer />
-    </div>
+    </>
   );
 };
 export default Layout;
